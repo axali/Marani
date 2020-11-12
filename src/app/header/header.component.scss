@@ -1,0 +1,20 @@
+$lt-gray: rgba(72, 62, 62, 0.953);
+$background-dark: #d6d5d3;
+$background-light: #d5d5d3;
+$background-pale: #212020;
+$background-moredark: #9e9e9e;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: $background-light ;
+    color:rgb(72, 66, 55);
+    min-height: 150px;
+}
+.active {
+    background: $background-moredark;
+}

@@ -1,0 +1,72 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3>About Us</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Our History</h2>
+        <p>Started in 2019, Marani quickly established itself as a culinary icon par excellence in georgia. </p>
+        <p>The bakery traces its humble beginnings to <em>The fresh "croissants"</em>, a successful chain started by our CEO, Mr. Piter , that featured for the first time the world's best cuisines in a EU.</p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+            <h2>Facts At a Glance</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt>Started</dt>
+              <dd>3 Feb. 2019</dd>
+              <dt>Major Stake Holder</dt>
+              <dd>HK Geo Meals Inc.</dd>
+              <dt>Last Year's Turnover</dt>
+              <dd>$1,562,375</dd>
+              <dt>Employees</dt>
+              <dd>40</dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
+    <div fxFlex>
+        <mat-card>
+            <blockquote>
+                <h3>You better cut the "qroisant" in half pieces because
+                    I'm not hungry enough to eat whole.</h3>
+                <footer>--PIT BRad,
+                <cite>The Wit and Wisdom of BRad,
+                    P.anan, Diversion Books, 2020</cite>
+                </footer>
+            </blockquote>
+        </mat-card>
+    </div>
+
+
+    <div fxFlex>
+        <h2>Corporate Leadership</h2>
+        <mat-list>
+            <mat-list-item *ngFor="let leader of leaders">
+                <img matListAvatar src="/assets/images/paata.png" alt="paata.png">
+                <h3 matLine> {{leader.name}} {{leader.abbr}} </h3>
+                <p matLine>
+                    <span> {{leader.designation}} </span>
+                </p>
+                <p matLine>
+                    <span >{{leader.description}} </span>
+                </p>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>
